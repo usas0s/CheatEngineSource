@@ -1,0 +1,94 @@
+object Form3: TForm3
+  Left = 741
+  Height = 250
+  Top = 176
+  Width = 571
+  BorderIcons = [biSystemMenu]
+  BorderStyle = bsDialog
+  Caption = 'Step 3'
+  ClientHeight = 250
+  ClientWidth = 571
+  Color = clBtnFace
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  OnClose = FormClose
+  OnCloseQuery = FormCloseQuery
+  OnCreate = FormCreate
+  Position = poOwnerFormCenter
+  LCLVersion = '0.9.31'
+  Visible = True
+  object Label1: TLabel
+    Left = 274
+    Height = 13
+    Top = 216
+    Width = 22
+    Alignment = taCenter
+    AutoSize = False
+    Caption = 'Loss'
+    ParentColor = False
+    Visible = False
+  end
+  object SpeedButton1: TSpeedButton
+    Left = 544
+    Height = 17
+    Top = 216
+    Width = 25
+    Caption = 'Skip'
+    Flat = True
+    NumGlyphs = 0
+    OnClick = SpeedButton1Click
+  end
+  object Memo1: TMemo
+    Left = 0
+    Height = 185
+    Top = 0
+    Width = 571
+    Align = alTop
+    Color = clBtnFace
+    Lines.Strings = (
+      'See resourcestrings'
+    )
+    ReadOnly = True
+    ScrollBars = ssVertical
+    TabOrder = 0
+  end
+  object Button1: TButton
+    Left = 248
+    Height = 25
+    Top = 192
+    Width = 75
+    Caption = 'Next'
+    Enabled = False
+    OnClick = Button1Click
+    TabOrder = 1
+  end
+  object Button2: TButton
+    Left = 0
+    Height = 17
+    Top = 208
+    Width = 41
+    Caption = 'Hit me'
+    OnClick = Button2Click
+    TabOrder = 2
+  end
+  object ProgressBar1: TProgressBar
+    Left = 0
+    Height = 16
+    Top = 234
+    Width = 571
+    Align = alBottom
+    TabOrder = 3
+  end
+  object Timer1: TTimer
+    Interval = 250
+    OnTimer = Timer1Timer
+    left = 8
+    top = 8
+  end
+  object Timer2: TTimer
+    OnTimer = Timer2Timer
+    left = 328
+    top = 216
+  end
+end

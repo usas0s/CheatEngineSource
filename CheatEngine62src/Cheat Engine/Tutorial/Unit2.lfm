@@ -1,0 +1,82 @@
+object Form2: TForm2
+  Left = 399
+  Height = 250
+  Top = 197
+  Width = 571
+  BorderIcons = [biSystemMenu]
+  BorderStyle = bsDialog
+  Caption = 'Step 2'
+  ClientHeight = 250
+  ClientWidth = 571
+  Color = clBtnFace
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  OnClose = FormClose
+  OnCloseQuery = FormCloseQuery
+  OnCreate = FormCreate
+  Position = poOwnerFormCenter
+  LCLVersion = '0.9.31'
+  object Label1: TLabel
+    Left = 40
+    Height = 14
+    Top = 232
+    Width = 19
+    Caption = '100'
+    ParentColor = False
+  end
+  object Label2: TLabel
+    Left = 0
+    Height = 14
+    Top = 232
+    Width = 35
+    Caption = 'Health:'
+    ParentColor = False
+  end
+  object SpeedButton1: TSpeedButton
+    Left = 541
+    Height = 20
+    Top = 230
+    Width = 30
+    Caption = 'Skip'
+    Flat = True
+    NumGlyphs = 0
+    OnClick = SpeedButton1Click
+  end
+  object Memo1: TMemo
+    Left = 0
+    Height = 185
+    Top = 0
+    Width = 571
+    Align = alTop
+    Color = clBtnFace
+    ReadOnly = True
+    ScrollBars = ssVertical
+    TabOrder = 0
+  end
+  object Button1: TButton
+    Left = 248
+    Height = 25
+    Top = 192
+    Width = 75
+    Caption = 'Next'
+    Enabled = False
+    OnClick = Button1Click
+    TabOrder = 1
+  end
+  object Button2: TButton
+    Left = 72
+    Height = 21
+    Top = 229
+    Width = 50
+    Caption = 'Hit me'
+    OnClick = Button2Click
+    TabOrder = 2
+  end
+  object Timer1: TTimer
+    Interval = 250
+    OnTimer = Timer1Timer
+    left = 136
+    top = 176
+  end
+end

@@ -1,0 +1,53 @@
+object frmThreadlist: TfrmThreadlist
+  Left = 1313
+  Height = 187
+  Top = 387
+  Width = 313
+  BorderStyle = bsSizeToolWin
+  Caption = 'Threadlist'
+  ClientHeight = 187
+  ClientWidth = 313
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  OnClose = FormClose
+  OnCreate = FormCreate
+  Position = poOwnerFormCenter
+  LCLVersion = '0.9.31'
+  object threadTreeview: TTreeView
+    Left = 0
+    Height = 187
+    Top = 0
+    Width = 313
+    Align = alClient
+    DefaultItemHeight = 16
+    MultiSelect = True
+    MultiSelectStyle = [msControlSelect, msVisibleOnly, msSiblingOnly]
+    PopupMenu = PopupMenu1
+    ReadOnly = True
+    RowSelect = True
+    TabOrder = 0
+    OnDblClick = threadTreeviewDblClick
+    OnExpanding = threadTreeviewExpanding
+    Options = [tvoAllowMultiselect, tvoAutoItemHeight, tvoHideSelection, tvoKeepCollapsedNodes, tvoReadOnly, tvoRowSelect, tvoShowButtons, tvoShowLines, tvoShowRoot, tvoToolTips, tvoThemedDraw]
+  end
+  object PopupMenu1: TPopupMenu
+    left = 80
+    top = 40
+    object miBreak: TMenuItem
+      Caption = 'Break'
+      OnClick = miBreakClick
+    end
+    object miClearDebugRegisters: TMenuItem
+      Caption = 'Clear debug registers'
+      OnClick = miClearDebugRegistersClick
+    end
+    object miFreezeThread: TMenuItem
+      Caption = 'Freeze thread'
+      OnClick = miFreezeThreadClick
+    end
+    object miResumeThread: TMenuItem
+      Caption = 'Resume thread'
+      OnClick = miResumeThreadClick
+    end
+  end
+end
